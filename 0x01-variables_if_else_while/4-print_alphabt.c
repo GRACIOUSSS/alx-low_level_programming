@@ -1,20 +1,22 @@
 #include <stdio.h>
-#include <stdlib.h>
-
 /**
  * main - entry point
  *
- * Return: Always 0
+ * Return: always zero (success/correct
  */
 
 int main(void)
 {
-	char low;
+	char alphabet;
 
-	for (low = 'a'; low <= 'z'; low++)
-		if (low == 'q' || low == 'e')
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	{
+		if (alphabet == 'q')
 			continue;
-	putchar(low);
+		else if (alphabet == 'e')
+			continue;
+		putchar(alphabet);
+	}
 	putchar('\n');
 	return (0);
 }
