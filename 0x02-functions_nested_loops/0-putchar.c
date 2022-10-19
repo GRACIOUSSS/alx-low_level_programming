@@ -1,18 +1,18 @@
-#include <stdio.h>
+#include <unistd.h>
+#include "main.h"
 /**
- * main - entry point
- *
- * Return: Always zero
+ * main - check description
+ * Description: it prints the word _putchar, followed by a new line.
+ * Return: zero
  */
 int main(void)
 {
-	char *sh = "stdio.h";
 
-	while (*sh)
-	{
-		_putchar(*sh);
-		sh++;
-	}
+	char word[8] = "_putchar";
+	int i;
+
+	for (i = 0; i < 8; i++)
+		_putchar(word[i]);
 	_putchar('\n');
 
 	return (0);
